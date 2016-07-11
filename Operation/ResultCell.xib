@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="resultCell" id="iN0-l3-epB" customClass="ResultCell" customModule="HS_Trainer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="584" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SetNum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMh-tc-un6">
+                    <rect key="frame" x="5" y="1" width="130" height="48"/>
+                    <color key="backgroundColor" red="0.42110558710000001" green="0.42110558710000001" blue="0.42110558710000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="W70-Eo-vBC"/>
+                        <constraint firstAttribute="height" constant="48" id="iDs-mF-xQy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compression" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGk-ve-wdz">
+                    <rect key="frame" x="140" y="1" width="220" height="48"/>
+                    <color key="backgroundColor" red="0.42110558710000001" green="0.42110558710000001" blue="0.42110558710000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="Hb9-vA-XEA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Respiration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPc-sv-40a">
+                    <rect key="frame" x="365" y="1" width="220" height="48"/>
+                    <color key="backgroundColor" red="0.42110558710000001" green="0.42110558710000001" blue="0.42110558710000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rGk-ve-wdz" firstAttribute="height" secondItem="kMh-tc-un6" secondAttribute="height" id="7e1-MC-yzV"/>
+                <constraint firstItem="kMh-tc-un6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="9Kd-gE-IiC"/>
+                <constraint firstItem="yPc-sv-40a" firstAttribute="leading" secondItem="rGk-ve-wdz" secondAttribute="trailing" constant="5" id="HH1-rG-i2t"/>
+                <constraint firstItem="kMh-tc-un6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Mhs-8i-69s"/>
+                <constraint firstItem="yPc-sv-40a" firstAttribute="width" secondItem="rGk-ve-wdz" secondAttribute="width" id="Tka-xp-z6C"/>
+                <constraint firstItem="yPc-sv-40a" firstAttribute="height" secondItem="rGk-ve-wdz" secondAttribute="height" id="awi-H4-j6v"/>
+                <constraint firstItem="rGk-ve-wdz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="f9s-jQ-mXd"/>
+                <constraint firstItem="rGk-ve-wdz" firstAttribute="leading" secondItem="kMh-tc-un6" secondAttribute="trailing" constant="5" id="he0-dw-ot7"/>
+                <constraint firstItem="yPc-sv-40a" firstAttribute="centerY" secondItem="rGk-ve-wdz" secondAttribute="centerY" id="tAv-rn-R39"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblComp" destination="rGk-ve-wdz" id="fe7-PZ-oWm"/>
+                <outlet property="lblResp" destination="yPc-sv-40a" id="49Q-Y1-RLd"/>
+                <outlet property="lblSetNum" destination="kMh-tc-un6" id="7uz-Dc-KcY"/>
+            </connections>
+            <point key="canvasLocation" x="398" y="488"/>
+        </view>
+    </objects>
+</document>
