@@ -45,7 +45,7 @@ class HtUnitLogic : NSObject { // 바이패스 모드 화면 띄우는 로직.. 
     // updateAction 을 불러 줌..  여러번 불려도 무방..
     
     var didDoneMainJob = false
-    var resetTimer = NSTimer()
+    var resetTimer = Timer()
     let delayTime = 3.0
     
     func updateAction() {
@@ -54,7 +54,7 @@ class HtUnitLogic : NSObject { // 바이패스 모드 화면 띄우는 로직.. 
             theMainVoidJob()
             didDoneMainJob = true
 
-            resetTimer = NSTimer.scheduledTimerWithTimeInterval(delayTime, target: self,
+            resetTimer = Timer.scheduledTimer(timeInterval: delayTime, target: self,
                 selector: #selector(HtUnitLogic.delayedAction), userInfo: nil, repeats: false)  // 한번만 실행..
         }
     }

@@ -18,6 +18,7 @@
 		73B19F381F1F04A1004ADEB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73B19F361F1F04A1004ADEB5 /* LaunchScreen.storyboard */; };
 		73B19F431F1F04A1004ADEB5 /* ObjSwiftBedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B19F421F1F04A1004ADEB5 /* ObjSwiftBedTests.m */; };
 		73B19F4E1F1F04A1004ADEB5 /* ObjSwiftBedUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B19F4D1F1F04A1004ADEB5 /* ObjSwiftBedUITests.m */; };
+		73B19FDA1F1F0726004ADEB5 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B19FD91F1F0726004ADEB5 /* Bridge.swift */; };
 		C95DB14361F9E6DEF1451EE6 /* libPods-ObjSwiftBedUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B725C6D242F1F149646D97B3 /* libPods-ObjSwiftBedUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		73B19F491F1F04A1004ADEB5 /* ObjSwiftBedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjSwiftBedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B19F4D1F1F04A1004ADEB5 /* ObjSwiftBedUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjSwiftBedUITests.m; sourceTree = "<group>"; };
 		73B19F4F1F1F04A1004ADEB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73B19FD81F1F0726004ADEB5 /* ObjSwiftBed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjSwiftBed-Bridging-Header.h"; sourceTree = "<group>"; };
+		73B19FD91F1F0726004ADEB5 /* Bridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		964DFA6A6B281AD1EC693127 /* Pods-ObjSwiftBedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjSwiftBedUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjSwiftBedUITests/Pods-ObjSwiftBedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B725C6D242F1F149646D97B3 /* libPods-ObjSwiftBedUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjSwiftBedUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D71F0F97329A0C223E3E220B /* Pods-ObjSwiftBedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjSwiftBedTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjSwiftBedTests/Pods-ObjSwiftBedTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 				73B19F361F1F04A1004ADEB5 /* LaunchScreen.storyboard */,
 				73B19F391F1F04A1004ADEB5 /* Info.plist */,
 				73B19F251F1F04A1004ADEB5 /* Supporting Files */,
+				73B19FD91F1F0726004ADEB5 /* Bridge.swift */,
+				73B19FD81F1F0726004ADEB5 /* ObjSwiftBed-Bridging-Header.h */,
 			);
 			path = ObjSwiftBed;
 			sourceTree = "<group>";
@@ -261,10 +266,13 @@
 				TargetAttributes = {
 					73B19F211F1F04A1004ADEB5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = CSH6CRWSVG;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					73B19F3D1F1F04A1004ADEB5 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = CSH6CRWSVG;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 73B19F211F1F04A1004ADEB5;
 					};
@@ -465,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B19FDA1F1F0726004ADEB5 /* Bridge.swift in Sources */,
 				73B19F301F1F04A1004ADEB5 /* SecondViewController.m in Sources */,
 				73B19F2A1F1F04A1004ADEB5 /* AppDelegate.m in Sources */,
 				73B19F2D1F1F04A1004ADEB5 /* FirstViewController.m in Sources */,
@@ -620,10 +629,15 @@
 			baseConfigurationReference = 197B36CBEA131C4F37E6199B /* Pods-ObjSwiftBed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = CSH6CRWSVG;
 				INFOPLIST_FILE = ObjSwiftBed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjttmoon.objswf.bed.ObjSwiftBed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjSwiftBed/ObjSwiftBed-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -632,10 +646,14 @@
 			baseConfigurationReference = 26F32BE47C73EFBC7EE9687A /* Pods-ObjSwiftBed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = CSH6CRWSVG;
 				INFOPLIST_FILE = ObjSwiftBed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjttmoon.objswf.bed.ObjSwiftBed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjSwiftBed/ObjSwiftBed-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -643,7 +661,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46E94C2C15AFC7DA582B0748 /* Pods-ObjSwiftBedTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CSH6CRWSVG;
 				INFOPLIST_FILE = ObjSwiftBedTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjttmoon.objswf.bed.ObjSwiftBedTests;
@@ -656,7 +676,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D71F0F97329A0C223E3E220B /* Pods-ObjSwiftBedTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = CSH6CRWSVG;
 				INFOPLIST_FILE = ObjSwiftBedTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjttmoon.objswf.bed.ObjSwiftBedTests;
@@ -669,6 +691,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1CD987E09152940E76581731 /* Pods-ObjSwiftBedUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ObjSwiftBedUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjttmoon.objswf.bed.ObjSwiftBedUITests;
@@ -681,6 +704,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 964DFA6A6B281AD1EC693127 /* Pods-ObjSwiftBedUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ObjSwiftBedUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jjttmoon.objswf.bed.ObjSwiftBedUITests;
@@ -708,6 +732,7 @@
 				73B19F541F1F04A1004ADEB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73B19F551F1F04A1004ADEB5 /* Build configuration list for PBXNativeTarget "ObjSwiftBedTests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +741,7 @@
 				73B19F571F1F04A1004ADEB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73B19F581F1F04A1004ADEB5 /* Build configuration list for PBXNativeTarget "ObjSwiftBedUITests" */ = {
 			isa = XCConfigurationList;
@@ -724,6 +750,7 @@
 				73B19F5A1F1F04A1004ADEB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

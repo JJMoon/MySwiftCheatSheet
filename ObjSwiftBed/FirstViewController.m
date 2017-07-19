@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import <LGAlertView.h>
 
 @interface FirstViewController ()
 
@@ -23,6 +24,17 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)actShowPopup:(id)sender {
+    NSLog(@"\n\n  Show Popup Button Touched !!! \n\n");
+    LGAlertView *alrtVw = [[LGAlertView alloc] initWithTitle:@"Title"
+                                                     message:@"Message"
+                                                       style:LGAlertViewStyleAlert
+                                                buttonTitles:NULL
+                                           cancelButtonTitle:@"OK"
+                                      destructiveButtonTitle:NULL];
+    [alrtVw show];
 }
 
 

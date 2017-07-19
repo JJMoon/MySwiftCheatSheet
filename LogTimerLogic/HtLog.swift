@@ -12,21 +12,19 @@ import Foundation
 class HtLog : NSObject {
     init (name: String) {  self.clsName = name; willPrn = true  }
     init (cName: String, active: Bool = true) {  self.clsName = cName; willPrn = active  }
-    init (cName: String, bleMan: HsBleManager) {  self.clsName = cName; bleObj = bleMan }
+    //init (cName: String, bleMan: HsBleManager) {  self.clsName = cName; bleObj = bleMan }
 
-    var bleObj: HsBleManager?
+    //var bleObj: HsBleManager?
 
     var prjtString: String {
-        get { if bleObj == nil { return "    HS : \(HsUtil.curStepStr())  "
-        } else {                 return "    HS : \(HsUtil.curStepStr((bleObj?.bleState)!))  " }
-        }
+        get { return "    HS : Prjt " }
     }
 
-    static let st = NSDate.timeIntervalSinceReferenceDate()
+    static let st = NSDate.timeIntervalSinceReferenceDate
     static let uiMarker = "===================================================================================================================  UI ====="
     static let Marker = " =============================================================================================   Method >>>"
     var willPrn = true, willPrnFun = true, clsName : String = "NSObject", funName : String = "Void", cnt = 0
-    var ct: String { get { return (NSDate.timeIntervalSinceReferenceDate() - HtLog.st).format(".3") } } // 진행 시간 (초)
+    var ct: String { get { return (NSDate.timeIntervalSinceReferenceDate - HtLog.st).format(".3") } } // 진행 시간 (초)
     
     func doNotPrintThisClass() { willPrn = false }
     
@@ -41,7 +39,7 @@ class HtLog : NSObject {
     
     func logBase(lnum:Int = 0, pStr:String = ".") {
         if willPrn && willPrnFun {
-            newLine(lnum)
+            newLine(lnum: lnum)
             print("\(ct) sec  \(prjtString) \t  \(getFunName())  ... " + pStr)
             newLine(lnum)
         }

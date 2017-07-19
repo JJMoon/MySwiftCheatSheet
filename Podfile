@@ -6,6 +6,7 @@ target 'ObjSwiftBed' do
   # use_frameworks!
 
   # Pods for ObjSwiftBed
+  pod 'LGAlertView', '~> 2.4'
 
   target 'ObjSwiftBedTests' do
     inherit! :search_paths

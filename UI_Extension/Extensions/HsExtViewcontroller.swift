@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import PSAlertView
+import LG
 
 extension UIViewController {
 

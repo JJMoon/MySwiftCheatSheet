@@ -7,41 +7,107 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0338E6EC00186A7C8D05981C0B47F782 /* LGAlertViewWindowsObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B92224099B6538E04AF2F5D9415804 /* LGAlertViewWindowsObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06D28686B00B31B39F269965BDDBD362 /* LGAlertViewWindowsObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4A4AA09A2C64C2A0F6899CE79D0970 /* LGAlertViewWindowsObserver.m */; };
+		074921F328139F0D1B4619D28BAAFAE2 /* LGAlertViewTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7F89CB320F5362E283CEAFE3BC6A56 /* LGAlertViewTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E9178D6D2B592D63B433B3C488B25D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1061C967DAB4E1B73129F5D3B6633D3E /* LGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA44A72A59BB9663380996BAD8AF7374 /* LGAlertView.m */; };
 		1270406069F940A7305472608B43BDD9 /* Pods-ObjSwiftBedTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BDCBDDE0693C5D78F8C1F0B4EE76BF /* Pods-ObjSwiftBedTests-dummy.m */; };
+		164BBB962E6A386683264A7AF1667C2D /* LGAlertViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6893635C708D396513C37FD0BED1253F /* LGAlertViewHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		200A265331AA0EFE7DDA931536388075 /* LGAlertViewButtonProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A04B4D898BB281E27C1C8AB0E5556F /* LGAlertViewButtonProperties.m */; };
+		2705D3DF9D55D1D1F83DDF4E8034B049 /* LGAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A27316E3DFD39872721257178B0BAA01 /* LGAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28B14D0AAE3B1B8F24C9A7F8CC7E215D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		2CF28AC5F6E7982753ABC6BFE580FA31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		3294BFAAFAF8751E962134C09AB77D6A /* Pods-ObjSwiftBed-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2300B95E47C1AD7E5018B329D147B44B /* Pods-ObjSwiftBed-dummy.m */; };
-		67813C8F67819B6F731C71D9DC000F3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		2F1F4B800DBEE4BD0751895EED33F1F8 /* LGAlertViewShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC75BE5D5470345096239E56668D4FCC /* LGAlertViewShadowView.m */; };
+		369E6098E73AB641D6D74912BC2B53BB /* LGAlertViewShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 850092D14E4D093FE4E6C7FB24DEA8A0 /* LGAlertViewShadowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A6E1649FBEFDE7D66BE8CE42AEE2E09 /* UIWindow+LGAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7EFBF2FCD8790B2AE6240A64A81C97 /* UIWindow+LGAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B20833B56DC5FF6CE6D3E5416290055 /* LGAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 569B43F637371D0CBB6228FED29F0F20 /* LGAlertView-dummy.m */; };
+		47CAA5FD9E054E292BC6ECA07A03E6BE /* LGAlertViewTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A41DB0CAD83D611E26D74A15B3A097C /* LGAlertViewTextField.m */; };
+		4F4011CAE7AF285D1E90D3CD31C8D1E5 /* LGAlertViewButtonProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = DC12229EE8D3C4D82D59797ED334A36F /* LGAlertViewButtonProperties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F5CE8AC3DCCD7C53032B2D22E497C4D /* Pods-ObjSwiftBed-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2300B95E47C1AD7E5018B329D147B44B /* Pods-ObjSwiftBed-dummy.m */; };
+		5878693C8314577392F3ED0984FC073A /* LGAlertViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E059C127FFACE3B391CEC92A722E1E33 /* LGAlertViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58DE0C6DAC5E64D2A9478B8811517BE5 /* LGAlertViewShared.h in Headers */ = {isa = PBXBuildFile; fileRef = 99C885565F8253E16EF53CA0E4E31363 /* LGAlertViewShared.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CD775A35F7AF6BFD7AB9CFC3167323D /* LGAlertViewWindowContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E51342915370B3CF38BE1FB15DF54D /* LGAlertViewWindowContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C13B4CAE7078E8607302BA94ACA8BA7 /* LGAlertViewWindowContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C80898F665400586B660F8DDAEF9E /* LGAlertViewWindowContainer.m */; };
+		875C482D5E8A4297FACF7D9888294F88 /* UIWindow+LGAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA800BA6296C32012BC012CF7A86D275 /* UIWindow+LGAlertView.m */; };
+		97E0F1A1FF489C01C45DC9921B9509AC /* LGAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 94C588C3D797FBA93AFDAD16BD160BD0 /* LGAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FF339718C427E865E14AEAA1C67A46D /* LGAlertViewButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 276091464917DBDB7AC292C7003C03D9 /* LGAlertViewButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A88079DF17EBD06236D52AD84849E6C3 /* LGAlertViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F16B636F2ECA54FEA7D885306ED2B9F0 /* LGAlertViewButton.m */; };
 		ACBB12321C19BCEBA480D224E29DAE57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AD3AF449E64769B885C7B2ED502B2780 /* LGAlertViewWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C1794E74CACAF92BF725657C2A3D26 /* LGAlertViewWindow.m */; };
+		B1E7367845897B0F907D976A2AF7E11A /* LGAlertViewWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 11851CE5F259DE258604F3B8309E0559 /* LGAlertViewWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC7313170AB320B33DD201DAE10E6B8C /* Pods-ObjSwiftBedUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36454331436B6C081CFACB9DA87BFF93 /* Pods-ObjSwiftBedUITests-dummy.m */; };
+		CFBB0CD249E4033DF9D5CC26987AF17D /* LGAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3113D9877C532262626716C487EC3B /* LGAlertViewController.m */; };
+		E94A21F7219ED243F0511EA7E6A7AECA /* LGAlertViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EE3E9EEC7D475A763FC2CCD6FE71CA /* LGAlertViewHelper.m */; };
+		EFF8A26C3071D109BE146BEA66471803 /* LGAlertViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CD115837E2D408A1CB1BFF6B6F08D0 /* LGAlertViewCell.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EBCD19BEC18D5D22D2A5804128D20E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C817274E85983A14F072A062A5DADA1A;
+			remoteInfo = LGAlertView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02E0B487BB1366E2D3F54A08675D6050 /* Pods-ObjSwiftBed-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjSwiftBed-acknowledgements.markdown"; sourceTree = "<group>"; };
+		11851CE5F259DE258604F3B8309E0559 /* LGAlertViewWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertViewWindow.h; path = LGAlertView/LGAlertViewWindow.h; sourceTree = "<group>"; };
 		1A43EF56D6FACF4CF013285061E91CBC /* Pods-ObjSwiftBedTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjSwiftBedTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2300B95E47C1AD7E5018B329D147B44B /* Pods-ObjSwiftBed-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjSwiftBed-dummy.m"; sourceTree = "<group>"; };
+		276091464917DBDB7AC292C7003C03D9 /* LGAlertViewButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertViewButton.h; path = LGAlertView/LGAlertViewButton.h; sourceTree = "<group>"; };
 		27A8B1B17B21F2578647AFB155CC6D61 /* Pods-ObjSwiftBed-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjSwiftBed-resources.sh"; sourceTree = "<group>"; };
 		358BFDA57F71D59E248A51F975E2B666 /* Pods-ObjSwiftBed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjSwiftBed.release.xcconfig"; sourceTree = "<group>"; };
 		36454331436B6C081CFACB9DA87BFF93 /* Pods-ObjSwiftBedUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjSwiftBedUITests-dummy.m"; sourceTree = "<group>"; };
+		4D7EFBF2FCD8790B2AE6240A64A81C97 /* UIWindow+LGAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWindow+LGAlertView.h"; path = "LGAlertView/UIWindow+LGAlertView.h"; sourceTree = "<group>"; };
+		4DF85644A7C144D251DC7D27C7E2A865 /* libPods-ObjSwiftBedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjSwiftBedTests.a"; path = "libPods-ObjSwiftBedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		569B43F637371D0CBB6228FED29F0F20 /* LGAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LGAlertView-dummy.m"; sourceTree = "<group>"; };
+		5E7B0C24591C1DD304136DF88558E4FF /* libLGAlertView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLGAlertView.a; path = libLGAlertView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6BEB174BE1D9CEF8102CE08DDCF987 /* Pods-ObjSwiftBedTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjSwiftBedTests-frameworks.sh"; sourceTree = "<group>"; };
 		6091136D61F4BA04083B5C13B08D7EBD /* Pods-ObjSwiftBedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjSwiftBedUITests.release.xcconfig"; sourceTree = "<group>"; };
+		62CD115837E2D408A1CB1BFF6B6F08D0 /* LGAlertViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGAlertViewCell.m; path = LGAlertView/LGAlertViewCell.m; sourceTree = "<group>"; };
+		6893635C708D396513C37FD0BED1253F /* LGAlertViewHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertViewHelper.h; path = LGAlertView/LGAlertViewHelper.h; sourceTree = "<group>"; };
+		6D4A4AA09A2C64C2A0F6899CE79D0970 /* LGAlertViewWindowsObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGAlertViewWindowsObserver.m; path = LGAlertView/LGAlertViewWindowsObserver.m; sourceTree = "<group>"; };
 		6E476A8280BA8005CFFF5D5961898B41 /* Pods-ObjSwiftBedTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjSwiftBedTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		70D4A4F33BC9ACF8D6515578B2FF6FFD /* Pods-ObjSwiftBedUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjSwiftBedUITests-frameworks.sh"; sourceTree = "<group>"; };
-		766957A40E4184609125C793D1C22ABC /* libPods-ObjSwiftBedUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjSwiftBedUITests.a"; path = "libPods-ObjSwiftBedUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4C80898F665400586B660F8DDAEF9E /* LGAlertViewWindowContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGAlertViewWindowContainer.m; path = LGAlertView/LGAlertViewWindowContainer.m; sourceTree = "<group>"; };
 		81BE38BF6688BA44C83C5B3A4B0407F5 /* Pods-ObjSwiftBed-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjSwiftBed-acknowledgements.plist"; sourceTree = "<group>"; };
+		850092D14E4D093FE4E6C7FB24DEA8A0 /* LGAlertViewShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertViewShadowView.h; path = LGAlertView/LGAlertViewShadowView.h; sourceTree = "<group>"; };
+		89C1794E74CACAF92BF725657C2A3D26 /* LGAlertViewWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGAlertViewWindow.m; path = LGAlertView/LGAlertViewWindow.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94C588C3D797FBA93AFDAD16BD160BD0 /* LGAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertView.h; path = LGAlertView/LGAlertView.h; sourceTree = "<group>"; };
+		99C885565F8253E16EF53CA0E4E31363 /* LGAlertViewShared.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertViewShared.h; path = LGAlertView/LGAlertViewShared.h; sourceTree = "<group>"; };
+		9A41DB0CAD83D611E26D74A15B3A097C /* LGAlertViewTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGAlertViewTextField.m; path = LGAlertView/LGAlertViewTextField.m; sourceTree = "<group>"; };
+		9D7F89CB320F5362E283CEAFE3BC6A56 /* LGAlertViewTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertViewTextField.h; path = LGAlertView/LGAlertViewTextField.h; sourceTree = "<group>"; };
 		A1136487B66D1408780ABC635EB9FB24 /* Pods-ObjSwiftBedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjSwiftBedTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BB194A8BF01C350B75DE8D66AABE9405 /* libPods-ObjSwiftBedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjSwiftBedTests.a"; path = "libPods-ObjSwiftBedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A27316E3DFD39872721257178B0BAA01 /* LGAlertViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertViewController.h; path = LGAlertView/LGAlertViewController.h; sourceTree = "<group>"; };
+		AA800BA6296C32012BC012CF7A86D275 /* UIWindow+LGAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+LGAlertView.m"; path = "LGAlertView/UIWindow+LGAlertView.m"; sourceTree = "<group>"; };
+		AE95C63C4055AE91E4B102E1181C90C9 /* libPods-ObjSwiftBed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjSwiftBed.a"; path = "libPods-ObjSwiftBed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6FBCDEBC800AE388448B0C14121F28F /* Pods-ObjSwiftBedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjSwiftBedUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C88D797B68AF64C6DE77E2F31E67D953 /* Pods-ObjSwiftBedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjSwiftBedTests.release.xcconfig"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE721314BEE0419B0EF0449D0E63AF88 /* LGAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LGAlertView-prefix.pch"; sourceTree = "<group>"; };
+		CFEBABAC7D2D5EA3C0AA3A749765D141 /* LGAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LGAlertView.xcconfig; sourceTree = "<group>"; };
 		D5026709BA5D186B3ED17DB94A12D18C /* Pods-ObjSwiftBedUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ObjSwiftBedUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D617F3C7725DC786F67B9E031399C66B /* libPods-ObjSwiftBed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjSwiftBed.a"; path = "libPods-ObjSwiftBed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC12229EE8D3C4D82D59797ED334A36F /* LGAlertViewButtonProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertViewButtonProperties.h; path = LGAlertView/LGAlertViewButtonProperties.h; sourceTree = "<group>"; };
+		DC75BE5D5470345096239E56668D4FCC /* LGAlertViewShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGAlertViewShadowView.m; path = LGAlertView/LGAlertViewShadowView.m; sourceTree = "<group>"; };
+		E059C127FFACE3B391CEC92A722E1E33 /* LGAlertViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertViewCell.h; path = LGAlertView/LGAlertViewCell.h; sourceTree = "<group>"; };
+		E1EE3E9EEC7D475A763FC2CCD6FE71CA /* LGAlertViewHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGAlertViewHelper.m; path = LGAlertView/LGAlertViewHelper.m; sourceTree = "<group>"; };
 		E285CE6D5F1565889285DC8E06188804 /* Pods-ObjSwiftBed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ObjSwiftBed.debug.xcconfig"; sourceTree = "<group>"; };
+		E3A04B4D898BB281E27C1C8AB0E5556F /* LGAlertViewButtonProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGAlertViewButtonProperties.m; path = LGAlertView/LGAlertViewButtonProperties.m; sourceTree = "<group>"; };
+		E5B92224099B6538E04AF2F5D9415804 /* LGAlertViewWindowsObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertViewWindowsObserver.h; path = LGAlertView/LGAlertViewWindowsObserver.h; sourceTree = "<group>"; };
 		E7BDCBDDE0693C5D78F8C1F0B4EE76BF /* Pods-ObjSwiftBedTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ObjSwiftBedTests-dummy.m"; sourceTree = "<group>"; };
 		E8779F34203B29D64C4966DAB0FD5810 /* Pods-ObjSwiftBedUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjSwiftBedUITests-resources.sh"; sourceTree = "<group>"; };
 		EA2E2CE07AE7BFD7EB406B104A3B3D89 /* Pods-ObjSwiftBed-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjSwiftBed-frameworks.sh"; sourceTree = "<group>"; };
 		ECF41CDD94271433E61E18B131BC48D5 /* Pods-ObjSwiftBedTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ObjSwiftBedTests-resources.sh"; sourceTree = "<group>"; };
+		ED6CA0DE428020BD61366520000BB381 /* libPods-ObjSwiftBedUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ObjSwiftBedUITests.a"; path = "libPods-ObjSwiftBedUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F16B636F2ECA54FEA7D885306ED2B9F0 /* LGAlertViewButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGAlertViewButton.m; path = LGAlertView/LGAlertViewButton.m; sourceTree = "<group>"; };
 		F48A9B2831EFE12500DB8AA0C0C77C19 /* Pods-ObjSwiftBedUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ObjSwiftBedUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F4E51342915370B3CF38BE1FB15DF54D /* LGAlertViewWindowContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LGAlertViewWindowContainer.h; path = LGAlertView/LGAlertViewWindowContainer.h; sourceTree = "<group>"; };
+		FA3113D9877C532262626716C487EC3B /* LGAlertViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGAlertViewController.m; path = LGAlertView/LGAlertViewController.m; sourceTree = "<group>"; };
+		FA44A72A59BB9663380996BAD8AF7374 /* LGAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LGAlertView.m; path = LGAlertView/LGAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +119,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE00C27B962C043B48F2B83C30CC0769 /* Frameworks */ = {
+		367C3D251442009A320BCD2ABEDA4749 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67813C8F67819B6F731C71D9DC000F3E /* Foundation.framework in Frameworks */,
+				28B14D0AAE3B1B8F24C9A7F8CC7E215D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +132,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACBB12321C19BCEBA480D224E29DAE57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF74FEE4C97F17406863BA9E5DCC0AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9178D6D2B592D63B433B3C488B25D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +154,70 @@
 				CB9D39738A0213EFD129D5D81648CB88 /* Pods-ObjSwiftBedUITests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		24C797D49DA5FB4C8185FB2EBE2B9BEB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFEBABAC7D2D5EA3C0AA3A749765D141 /* LGAlertView.xcconfig */,
+				569B43F637371D0CBB6228FED29F0F20 /* LGAlertView-dummy.m */,
+				CE721314BEE0419B0EF0449D0E63AF88 /* LGAlertView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LGAlertView";
+			sourceTree = "<group>";
+		};
+		339364F03C1D9C05031F8CAB418336BB /* LGAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				94C588C3D797FBA93AFDAD16BD160BD0 /* LGAlertView.h */,
+				FA44A72A59BB9663380996BAD8AF7374 /* LGAlertView.m */,
+				276091464917DBDB7AC292C7003C03D9 /* LGAlertViewButton.h */,
+				F16B636F2ECA54FEA7D885306ED2B9F0 /* LGAlertViewButton.m */,
+				DC12229EE8D3C4D82D59797ED334A36F /* LGAlertViewButtonProperties.h */,
+				E3A04B4D898BB281E27C1C8AB0E5556F /* LGAlertViewButtonProperties.m */,
+				E059C127FFACE3B391CEC92A722E1E33 /* LGAlertViewCell.h */,
+				62CD115837E2D408A1CB1BFF6B6F08D0 /* LGAlertViewCell.m */,
+				A27316E3DFD39872721257178B0BAA01 /* LGAlertViewController.h */,
+				FA3113D9877C532262626716C487EC3B /* LGAlertViewController.m */,
+				6893635C708D396513C37FD0BED1253F /* LGAlertViewHelper.h */,
+				E1EE3E9EEC7D475A763FC2CCD6FE71CA /* LGAlertViewHelper.m */,
+				850092D14E4D093FE4E6C7FB24DEA8A0 /* LGAlertViewShadowView.h */,
+				DC75BE5D5470345096239E56668D4FCC /* LGAlertViewShadowView.m */,
+				99C885565F8253E16EF53CA0E4E31363 /* LGAlertViewShared.h */,
+				9D7F89CB320F5362E283CEAFE3BC6A56 /* LGAlertViewTextField.h */,
+				9A41DB0CAD83D611E26D74A15B3A097C /* LGAlertViewTextField.m */,
+				11851CE5F259DE258604F3B8309E0559 /* LGAlertViewWindow.h */,
+				89C1794E74CACAF92BF725657C2A3D26 /* LGAlertViewWindow.m */,
+				F4E51342915370B3CF38BE1FB15DF54D /* LGAlertViewWindowContainer.h */,
+				7C4C80898F665400586B660F8DDAEF9E /* LGAlertViewWindowContainer.m */,
+				E5B92224099B6538E04AF2F5D9415804 /* LGAlertViewWindowsObserver.h */,
+				6D4A4AA09A2C64C2A0F6899CE79D0970 /* LGAlertViewWindowsObserver.m */,
+				4D7EFBF2FCD8790B2AE6240A64A81C97 /* UIWindow+LGAlertView.h */,
+				AA800BA6296C32012BC012CF7A86D275 /* UIWindow+LGAlertView.m */,
+				24C797D49DA5FB4C8185FB2EBE2B9BEB /* Support Files */,
+			);
+			name = LGAlertView;
+			path = LGAlertView;
+			sourceTree = "<group>";
+		};
+		4414089DA3F07738C7954B2E60B85A08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				339364F03C1D9C05031F8CAB418336BB /* LGAlertView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D81D7C8A3C07531562772F0706D8BD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E7B0C24591C1DD304136DF88558E4FF /* libLGAlertView.a */,
+				AE95C63C4055AE91E4B102E1181C90C9 /* libPods-ObjSwiftBed.a */,
+				4DF85644A7C144D251DC7D27C7E2A865 /* libPods-ObjSwiftBedTests.a */,
+				ED6CA0DE428020BD61366520000BB381 /* libPods-ObjSwiftBedUITests.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		6DC7F029B9F91CD81D9AB1CC7F60F537 /* Pods-ObjSwiftBedTests */ = {
@@ -110,7 +248,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				FD51971219C789D617BC8C79DE3285BB /* Products */,
+				4414089DA3F07738C7954B2E60B85A08 /* Pods */,
+				6D81D7C8A3C07531562772F0706D8BD3 /* Products */,
 				0CF22591028F3628D95E320F99F1D063 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -153,35 +292,32 @@
 			path = "Target Support Files/Pods-ObjSwiftBedUITests";
 			sourceTree = "<group>";
 		};
-		FD51971219C789D617BC8C79DE3285BB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D617F3C7725DC786F67B9E031399C66B /* libPods-ObjSwiftBed.a */,
-				BB194A8BF01C350B75DE8D66AABE9405 /* libPods-ObjSwiftBedTests.a */,
-				766957A40E4184609125C793D1C22ABC /* libPods-ObjSwiftBedUITests.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		26AA475942D8518AD84D68F6477CC59D /* Pods-ObjSwiftBed */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BB9056AD29045605340DCD76007C739D /* Build configuration list for PBXNativeTarget "Pods-ObjSwiftBed" */;
-			buildPhases = (
-				49F81F6FF11740000F95D6542AA043E9 /* Sources */,
-				CE00C27B962C043B48F2B83C30CC0769 /* Frameworks */,
+/* Begin PBXHeadersBuildPhase section */
+		C5226A53E06A8DD4D90ED39C342532E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97E0F1A1FF489C01C45DC9921B9509AC /* LGAlertView.h in Headers */,
+				9FF339718C427E865E14AEAA1C67A46D /* LGAlertViewButton.h in Headers */,
+				4F4011CAE7AF285D1E90D3CD31C8D1E5 /* LGAlertViewButtonProperties.h in Headers */,
+				5878693C8314577392F3ED0984FC073A /* LGAlertViewCell.h in Headers */,
+				2705D3DF9D55D1D1F83DDF4E8034B049 /* LGAlertViewController.h in Headers */,
+				164BBB962E6A386683264A7AF1667C2D /* LGAlertViewHelper.h in Headers */,
+				369E6098E73AB641D6D74912BC2B53BB /* LGAlertViewShadowView.h in Headers */,
+				58DE0C6DAC5E64D2A9478B8811517BE5 /* LGAlertViewShared.h in Headers */,
+				074921F328139F0D1B4619D28BAAFAE2 /* LGAlertViewTextField.h in Headers */,
+				B1E7367845897B0F907D976A2AF7E11A /* LGAlertViewWindow.h in Headers */,
+				5CD775A35F7AF6BFD7AB9CFC3167323D /* LGAlertViewWindowContainer.h in Headers */,
+				0338E6EC00186A7C8D05981C0B47F782 /* LGAlertViewWindowsObserver.h in Headers */,
+				3A6E1649FBEFDE7D66BE8CE42AEE2E09 /* UIWindow+LGAlertView.h in Headers */,
 			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-ObjSwiftBed";
-			productName = "Pods-ObjSwiftBed";
-			productReference = D617F3C7725DC786F67B9E031399C66B /* libPods-ObjSwiftBed.a */;
-			productType = "com.apple.product-type.library.static";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
 		699795F652ABDBF2E95C5B4936FF61FD /* Pods-ObjSwiftBedTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07B3C34D113392B9E5EB0DF72BD2689D /* Build configuration list for PBXNativeTarget "Pods-ObjSwiftBedTests" */;
@@ -195,7 +331,41 @@
 			);
 			name = "Pods-ObjSwiftBedTests";
 			productName = "Pods-ObjSwiftBedTests";
-			productReference = BB194A8BF01C350B75DE8D66AABE9405 /* libPods-ObjSwiftBedTests.a */;
+			productReference = 4DF85644A7C144D251DC7D27C7E2A865 /* libPods-ObjSwiftBedTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B25B6E56EB7EC618F02310B4B1483806 /* Pods-ObjSwiftBed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0EED22244BE8BC67F13FB57FA4153C6 /* Build configuration list for PBXNativeTarget "Pods-ObjSwiftBed" */;
+			buildPhases = (
+				E339748BF15108A8FC11C967F3CBA46B /* Sources */,
+				ECF74FEE4C97F17406863BA9E5DCC0AF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2314EC9B46F865B91367A6580FF36F67 /* PBXTargetDependency */,
+			);
+			name = "Pods-ObjSwiftBed";
+			productName = "Pods-ObjSwiftBed";
+			productReference = AE95C63C4055AE91E4B102E1181C90C9 /* libPods-ObjSwiftBed.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C817274E85983A14F072A062A5DADA1A /* LGAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6B79250363CCD4A53EC9F1DE27761A9 /* Build configuration list for PBXNativeTarget "LGAlertView" */;
+			buildPhases = (
+				92A5575C8C89B1B948F405218842CFE4 /* Sources */,
+				367C3D251442009A320BCD2ABEDA4749 /* Frameworks */,
+				C5226A53E06A8DD4D90ED39C342532E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LGAlertView;
+			productName = LGAlertView;
+			productReference = 5E7B0C24591C1DD304136DF88558E4FF /* libLGAlertView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		F5E4FC8B59147C6A693CE7603D4E47FA /* Pods-ObjSwiftBedUITests */ = {
@@ -211,7 +381,7 @@
 			);
 			name = "Pods-ObjSwiftBedUITests";
 			productName = "Pods-ObjSwiftBedUITests";
-			productReference = 766957A40E4184609125C793D1C22ABC /* libPods-ObjSwiftBedUITests.a */;
+			productReference = ED6CA0DE428020BD61366520000BB381 /* libPods-ObjSwiftBedUITests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -231,11 +401,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FD51971219C789D617BC8C79DE3285BB /* Products */;
+			productRefGroup = 6D81D7C8A3C07531562772F0706D8BD3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26AA475942D8518AD84D68F6477CC59D /* Pods-ObjSwiftBed */,
+				C817274E85983A14F072A062A5DADA1A /* LGAlertView */,
+				B25B6E56EB7EC618F02310B4B1483806 /* Pods-ObjSwiftBed */,
 				699795F652ABDBF2E95C5B4936FF61FD /* Pods-ObjSwiftBedTests */,
 				F5E4FC8B59147C6A693CE7603D4E47FA /* Pods-ObjSwiftBedUITests */,
 			);
@@ -243,19 +414,31 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		49F81F6FF11740000F95D6542AA043E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3294BFAAFAF8751E962134C09AB77D6A /* Pods-ObjSwiftBed-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8868FD7E2223D4921D806B05A26941BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1270406069F940A7305472608B43BDD9 /* Pods-ObjSwiftBedTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92A5575C8C89B1B948F405218842CFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B20833B56DC5FF6CE6D3E5416290055 /* LGAlertView-dummy.m in Sources */,
+				1061C967DAB4E1B73129F5D3B6633D3E /* LGAlertView.m in Sources */,
+				A88079DF17EBD06236D52AD84849E6C3 /* LGAlertViewButton.m in Sources */,
+				200A265331AA0EFE7DDA931536388075 /* LGAlertViewButtonProperties.m in Sources */,
+				EFF8A26C3071D109BE146BEA66471803 /* LGAlertViewCell.m in Sources */,
+				CFBB0CD249E4033DF9D5CC26987AF17D /* LGAlertViewController.m in Sources */,
+				E94A21F7219ED243F0511EA7E6A7AECA /* LGAlertViewHelper.m in Sources */,
+				2F1F4B800DBEE4BD0751895EED33F1F8 /* LGAlertViewShadowView.m in Sources */,
+				47CAA5FD9E054E292BC6ECA07A03E6BE /* LGAlertViewTextField.m in Sources */,
+				AD3AF449E64769B885C7B2ED502B2780 /* LGAlertViewWindow.m in Sources */,
+				7C13B4CAE7078E8607302BA94ACA8BA7 /* LGAlertViewWindowContainer.m in Sources */,
+				06D28686B00B31B39F269965BDDBD362 /* LGAlertViewWindowsObserver.m in Sources */,
+				875C482D5E8A4297FACF7D9888294F88 /* UIWindow+LGAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +450,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E339748BF15108A8FC11C967F3CBA46B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F5CE8AC3DCCD7C53032B2D22E497C4D /* Pods-ObjSwiftBed-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2314EC9B46F865B91367A6580FF36F67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LGAlertView;
+			target = C817274E85983A14F072A062A5DADA1A /* LGAlertView */;
+			targetProxy = 6EBCD19BEC18D5D22D2A5804128D20E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		150EF2CC6C038A578E653BFE73FAE0B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 358BFDA57F71D59E248A51F975E2B666 /* Pods-ObjSwiftBed.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -333,28 +556,29 @@
 			};
 			name = Release;
 		};
-		6B9F02AC1463926C4E9C6EC879E0747F /* Release */ = {
+		5AEA2AE9C27BCE69ED7E3481231CB0B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 358BFDA57F71D59E248A51F975E2B666 /* Pods-ObjSwiftBed.release.xcconfig */;
+			baseConfigurationReference = CFEBABAC7D2D5EA3C0AA3A749765D141 /* LGAlertView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/LGAlertView/LGAlertView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
-			name = Release;
+			name = Debug;
 		};
 		75AA09E15CD7B88428BFB8599402BB26 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -378,6 +602,30 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
+		};
+		9C4E82493BC695AF46F170F6ADDE4BE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFEBABAC7D2D5EA3C0AA3A749765D141 /* LGAlertView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LGAlertView/LGAlertView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
 		};
 		9E359381A45E75F5168B3E07378CDEEB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -425,6 +673,29 @@
 			};
 			name = Release;
 		};
+		C1278B353B38B2040FA80DAA4A5D42B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E285CE6D5F1565889285DC8E06188804 /* Pods-ObjSwiftBed.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -469,29 +740,6 @@
 			};
 			name = Debug;
 		};
-		E94A258946A61F6D9BCAE928F7C65136 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E285CE6D5F1565889285DC8E06188804 /* Pods-ObjSwiftBed.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -513,11 +761,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB9056AD29045605340DCD76007C739D /* Build configuration list for PBXNativeTarget "Pods-ObjSwiftBed" */ = {
+		B6B79250363CCD4A53EC9F1DE27761A9 /* Build configuration list for PBXNativeTarget "LGAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E94A258946A61F6D9BCAE928F7C65136 /* Debug */,
-				6B9F02AC1463926C4E9C6EC879E0747F /* Release */,
+				5AEA2AE9C27BCE69ED7E3481231CB0B7 /* Debug */,
+				9C4E82493BC695AF46F170F6ADDE4BE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -527,6 +775,15 @@
 			buildConfigurations = (
 				9E359381A45E75F5168B3E07378CDEEB /* Debug */,
 				545E3FD49E300E09F2ADAD36D86BC331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0EED22244BE8BC67F13FB57FA4153C6 /* Build configuration list for PBXNativeTarget "Pods-ObjSwiftBed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1278B353B38B2040FA80DAA4A5D42B1 /* Debug */,
+				150EF2CC6C038A578E653BFE73FAE0B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
