@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import LG
+import UIKit
 
 extension UIViewController {
 
