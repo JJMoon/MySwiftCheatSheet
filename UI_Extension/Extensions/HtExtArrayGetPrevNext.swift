@@ -10,8 +10,6 @@ import Foundation
 
 
 extension Array {
-
-
     func indexOfFirst<Element: Equatable>(object: Element) -> Int? {
         for (idx, objectToCompare) in self.enumerated() {
             if let to = objectToCompare as? Element {
@@ -24,16 +22,12 @@ extension Array {
     }
 
     func getNext<Element: Equatable>(obj: Element) -> ArraySlice<Element> {
-        //var rArr = [Element]()
         if let idx = self.indexOfFirst(object: obj) {
 
             print(" next  idx >>  \(idx)  \(self.startIndex)   \(self.count)")
             if idx == self.endIndex - 1 {
                 return []
             }
-//            for k in idx + 1..<self.endIndex {
-//                rArr.append(self[k] as! Element)
-//            }
             return self[(idx + 1)..<self.endIndex] as! ArraySlice<Element>
         }
         return []
