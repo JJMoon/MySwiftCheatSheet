@@ -41,14 +41,23 @@
                                     <action selector="actShowPopup:" destination="9pv-A4-QxB" eventType="touchUpInside" id="3IZ-3q-pdY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyD-CZ-ijQ">
+                                <rect key="frame" x="165.5" y="100" width="44" height="30"/>
+                                <state key="normal" title="Test A"/>
+                                <connections>
+                                    <action selector="actTestA:" destination="9pv-A4-QxB" eventType="touchUpInside" id="qJN-Nt-0cA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="CyD-CZ-ijQ" firstAttribute="centerX" secondItem="J7a-B4-Aei" secondAttribute="centerX" id="4Bp-Ci-alk"/>
                             <constraint firstItem="J7a-B4-Aei" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="5w5-zO-txP"/>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
                             <constraint firstItem="J7a-B4-Aei" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="45" id="EzJ-e4-tIC"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
                             <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
+                            <constraint firstItem="CyD-CZ-ijQ" firstAttribute="top" secondItem="J7a-B4-Aei" secondAttribute="bottom" constant="5" id="ek6-ni-yZL"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
