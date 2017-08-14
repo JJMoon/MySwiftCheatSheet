@@ -29,10 +29,10 @@ extension NSLayoutConstraint {
         newConstraint.priority = priority
         newConstraint.shouldBeArchived = self.shouldBeArchived
         newConstraint.identifier = self.identifier
-        newConstraint.active = true
+        newConstraint.isActive = true
 
-        NSLayoutConstraint.deactivateConstraints([self])
-        NSLayoutConstraint.activateConstraints([newConstraint])
+        NSLayoutConstraint.deactivate([self])
+        NSLayoutConstraint.activate([newConstraint])
         return newConstraint
     }
 }
@@ -53,35 +53,36 @@ public extension UIView {
     func setBorder(wid: CGFloat, rad: CGFloat, borderCol: UIColor, bgCol: UIColor?) {
         self.layer.cornerRadius = rad
         self.layer.borderWidth = wid
-        self.layer.borderColor = borderCol.CGColor
+        self.layer.borderColor = borderCol.cgColor
         if bgCol != nil { self.backgroundColor = bgCol! }
     }
 
     func getConstAspectRatio(hOverw: CGFloat) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Height, relatedBy: .Equal, toItem: self,
-                                       attribute: NSLayoutAttribute.Width, multiplier: hOverw, constant: 0)
+        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.height, relatedBy: .equal, toItem: self,
+                                       attribute: NSLayoutAttribute.width, multiplier: hOverw, constant: 0)
     }
 
     func getConstCenterX(target: UIView, delta: CGFloat) -> NSLayoutConstraint {
-        return NSLayoutConstraint.init(item: self, attribute: NSLayoutAttribute.CenterX, relatedBy: .Equal,
-                                       toItem: target, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: delta)
+        return NSLayoutConstraint.init(item: self, attribute: NSLayoutAttribute.centerX, relatedBy: .equal,
+                                       toItem: target, attribute: NSLayoutAttribute.centerX, multiplier: 1, constant: delta)
     }
     func getConstCenterY(target: UIView, delta: CGFloat) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.CenterY, relatedBy: .Equal,
-                                       toItem: target, attribute: NSLayoutAttribute.CenterY, multiplier: 1, constant: delta)
+        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.centerY, relatedBy: .equal,
+                                       toItem: target, attribute: NSLayoutAttribute.centerY, multiplier: 1, constant: delta)
     }
 
     func getConstSize(width: CGFloat, height: CGFloat) -> [ NSLayoutConstraint ] {
-        return [ NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Width, relatedBy: .Equal,
-            toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute,
+        return [ NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.width, relatedBy: .equal,
+            toItem: nil, attribute: NSLayoutAttribute.notAnAttribute,
             multiplier: 1, constant: width),
-                 NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Height, relatedBy: .Equal,
-                    toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute,
+                 NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.height, relatedBy: .equal,
+                    toItem: nil, attribute: NSLayoutAttribute.notAnAttribute,
                     multiplier: 1, constant: height) ]
     }
 
 
-    func addSubViewVertCenter(var subVw: UIView?, frY: CGFloat, toY: CGFloat, marginX: CGFloat, nth: Int, ea: Int, margin: CGFloat) -> UIView? {
+    func addSubViewVertCenter(subVw: UIView?, frY: CGFloat, toY: CGFloat, marginX: CGFloat, nth: Int, ea: Int, margin: CGFloat) -> UIView? {
+        var subVw = subVw
         if ea <= nth {
             print("\n\n\n\n\n  HtExtUIView :: addSubViewVertCenter Error  !!!!  \t\t ea <= nth  \n\n\n\n\n")
             return nil
@@ -123,46 +124,46 @@ public extension UIView {
     func rotate360Degrees(duration: CFTimeInterval = 1.0, repeatCnt: Float, completionDelegate: AnyObject? = nil) {
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.repeatCount = repeatCnt
-        rotateAnimation.fromValue = CGFloat(2 * M_PI)
+        rotateAnimation.fromValue = CGFloat(2 * Double.pi)
         rotateAnimation.toValue = 0.0
         rotateAnimation.duration = duration
         if let delegate: AnyObject = completionDelegate {
-            rotateAnimation.delegate = delegate
+            rotateAnimation.delegate = delegate as! CAAnimationDelegate
         }
-        self.layer.addAnimation(rotateAnimation, forKey: nil)
+        self.layer.add(rotateAnimation, forKey: nil)
     }
 
     func hideMe() {
-        self.hidden = true
+        self.isHidden = true
     }
 
     func showMe() {
-        self.hidden = false
+        self.isHidden = false
     }
 
     func show_다음이_참이면(boolVal: Bool?) {
-        self.hidden = !boolVal!
+        self.isHidden = !boolVal!
     }
 }
 
 public extension UIButton {
     func alignCenter() {
-        self.titleLabel?.textAlignment = .Center
+        self.titleLabel?.textAlignment = .center
     }
 
     func setTtitleAccordingTo(bVar: Bool, trueTxt: String, falseTxt: String) {
         if bVar {
-            self.setTitle(trueTxt, forState: .Normal)
+            self.setTitle(trueTxt, for: .normal)
         } else {
-            self.setTitle(falseTxt, forState: .Normal)
+            self.setTitle(falseTxt, for: .normal)
         }
     }
 
     func setImageAccordingTo(bVar: Bool, trueImg: String, falseImg: String) {
         if bVar {
-            self.setImage(UIImage(named: trueImg), forState: .Normal)
+            self.setImage(UIImage(named: trueImg), for: .normal)
         } else {
-            self.setImage(UIImage(named: falseImg), forState: .Normal)
+            self.setImage(UIImage(named: falseImg), for: .normal)
         }
     }
 
@@ -170,7 +171,7 @@ public extension UIButton {
         self.translatesAutoresizingMaskIntoConstraints = false // Xcode 가 기본으로 덧붙이는 제한을 막는다.
         let viewDict : [String : AnyObject] = ["Vw" : self.titleLabel!]
         let formatStr = "V:|-\(topSpace)-[Vw]-\(btmSpace)-|"
-        let cons = NSLayoutConstraint.constraintsWithVisualFormat(formatStr, options: NSLayoutFormatOptions.init(rawValue: 0), metrics: nil, views: viewDict)
+        let cons = NSLayoutConstraint.constraints(withVisualFormat: formatStr, options: NSLayoutFormatOptions.init(rawValue: 0), metrics: nil, views: viewDict)
         self.addConstraints(cons)
 
         self.titleLabel?.adjustsFontSizeToFitWidth = true
@@ -179,17 +180,17 @@ public extension UIButton {
     }
 
     func activate() {
-        self.enabled = true
+        self.isEnabled = true
     }
 
     func deactivate() {
-        self.enabled = false
+        self.isEnabled = false
     }
 }
 
 public extension UILabel {
     func alignCenter() {
-        self.textAlignment = .Center
+        self.textAlignment = .center
     }
 
     func setColorAccord(boolVal: Bool, tColor: UIColor, fColor: UIColor) {
@@ -200,8 +201,8 @@ public extension UILabel {
 
 public extension UITextField {
     func getInt(defaultVal: Int) -> Int {
-        if let intNum = NSNumberFormatter().numberFromString(text!) {
-            return  intNum.integerValue
+        if let intNum = NumberFormatter().number(from: text!) {
+            return  intNum.intValue
         } else {
             return defaultVal
         }
@@ -220,46 +221,46 @@ public extension NSArray {
 
 //  "timestamp": "2015-11-02 21:52:43",
 
-extension NSDate {
-    struct Date {
-        static let formatter = NSDateFormatter()
-    }
-    var formattedT: String {
-        Date.formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSX"
-        Date.formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
-        Date.formatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)!
-        Date.formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-        return Date.formatter.stringFromDate(self)
-    }
-
-    func formatFromOption(opt: Int) -> String {
-        var formt = "yyyy-MM-dd HH:mm:ss"
-        switch opt {
-        case 0:
-            formt = "yyyy/MM/dd"
-        case 1:
-            formt = "dd/MM/yyyy"
-        case 2:
-            formt = "MM/dd/yyyy"
-        default:
-            formt = "yyyy/MM/dd"
-        }
-
-        Date.formatter.dateFormat = formt
-        //Date.formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
-        Date.formatter.timeZone = NSTimeZone.localTimeZone()
-        Date.formatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)!
-        Date.formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-        return Date.formatter.stringFromDate(self)
-    }
-    
-    var formatYYMMDDspaceTime: String {
-        Date.formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        //Date.formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
-        Date.formatter.timeZone = NSTimeZone.localTimeZone()
-        Date.formatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)!
-        Date.formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-        return Date.formatter.stringFromDate(self)
-    }
-
-}
+//extension NSDate {
+//    struct Date {
+//        static let formatter = DateFormatter()
+//    }
+//    var formattedT: String {
+//        Date.formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSX"
+//        Date.formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
+//        Date.formatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)!
+//        Date.formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+//        return Date.formatter.stringFromDate(self)
+//    }
+//
+//    func formatFromOption(opt: Int) -> String {
+//        var formt = "yyyy-MM-dd HH:mm:ss"
+//        switch opt {
+//        case 0:
+//            formt = "yyyy/MM/dd"
+//        case 1:
+//            formt = "dd/MM/yyyy"
+//        case 2:
+//            formt = "MM/dd/yyyy"
+//        default:
+//            formt = "yyyy/MM/dd"
+//        }
+//
+//        Date.formatter.dateFormat = formt
+//        //Date.formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
+//        Date.formatter.timeZone = NSTimeZone.localTimeZone()
+//        Date.formatter.calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)!
+//        Date.formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+//        return Date.formatter.stringFromDate(self)
+//    }
+//    
+//    var formatYYMMDDspaceTime: String {
+//        Date.formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+//        //Date.formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
+//        Date.formatter.timeZone = NSTimeZone.local
+//        Date.formatter.calendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.ISO8601)! as Calendar!
+//        Date.formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX") as Locale!
+//        return Date.formatter.stringFromDate(self)
+//    }
+//
+//}

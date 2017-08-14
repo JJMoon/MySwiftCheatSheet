@@ -10,10 +10,8 @@ import Foundation
 
 
 extension Array {
-
-
     func indexOfFirst<Element: Equatable>(object: Element) -> Int? {
-        for (idx, objectToCompare) in self.enumerate() {
+        for (idx, objectToCompare) in self.enumerated() {
             if let to = objectToCompare as? Element {
                 if object == to {
                     return idx
@@ -24,16 +22,12 @@ extension Array {
     }
 
     func getNext<Element: Equatable>(obj: Element) -> ArraySlice<Element> {
-        //var rArr = [Element]()
-        if let idx = self.indexOfFirst(obj) {
+        if let idx = self.indexOfFirst(object: obj) {
 
             print(" next  idx >>  \(idx)  \(self.startIndex)   \(self.count)")
             if idx == self.endIndex - 1 {
                 return []
             }
-//            for k in idx + 1..<self.endIndex {
-//                rArr.append(self[k] as! Element)
-//            }
             return self[(idx + 1)..<self.endIndex] as! ArraySlice<Element>
         }
         return []
@@ -42,7 +36,7 @@ extension Array {
 
     func getPrev<Element: Equatable>(obj: Element) -> [Element] {
         //var rArr = [Element]()
-        if let idx = self.indexOfFirst(obj) {
+        if let idx = self.indexOfFirst(object: obj) {
             if idx == 0 {
                 return []
             }
@@ -52,7 +46,7 @@ extension Array {
     }
 
     func getNextMatch<Element: Equatable>(obj: Element, filter: (Element)-> Bool ) -> Element? {
-        let nextArr = getNext(obj)
+        let nextArr = getNext(obj: obj)
         for ob in nextArr {
             if filter(ob) { return ob as? Element }
         }
@@ -60,8 +54,8 @@ extension Array {
     }
 
     func getPrevMatch<Element: Equatable>(obj: Element, filter: (Element)-> Bool ) -> Element? {
-        var prevArr = getPrev(obj)
-        prevArr = prevArr.reverse()
+        var prevArr = getPrev(obj: obj)
+        prevArr = prevArr.reversed()
         for ob in prevArr {
             if filter(ob) { return ob as? Element }
         }

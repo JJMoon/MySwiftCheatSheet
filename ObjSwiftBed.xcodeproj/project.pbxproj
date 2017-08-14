@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		0751D4AF0ADA0DA9EAD63FD4 /* libPods-ObjSwiftBed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64330056BE1CDD50D6372448 /* libPods-ObjSwiftBed.a */; };
 		73720074DCDC9D200D1A13F8 /* libPods-ObjSwiftBedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B431798634A2C0D810C3544 /* libPods-ObjSwiftBedTests.a */; };
+		73AB2E611F25B4C90012FB79 /* CGPoint+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2E531F25B4C90012FB79 /* CGPoint+Math.swift */; };
+		73AB2E631F25B4C90012FB79 /* HtDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2E551F25B4C90012FB79 /* HtDouble.swift */; };
+		73AB2E641F25B4C90012FB79 /* HtExtArrayGetPrevNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2E561F25B4C90012FB79 /* HtExtArrayGetPrevNext.swift */; };
+		73AB2E651F25B4C90012FB79 /* HtExtNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2E571F25B4C90012FB79 /* HtExtNSObject.swift */; };
+		73AB2E671F25B4C90012FB79 /* HtExtString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2E591F25B4C90012FB79 /* HtExtString.swift */; };
+		73AB2E681F25B4C90012FB79 /* HtExtUiColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2E5A1F25B4C90012FB79 /* HtExtUiColor.swift */; };
+		73AB2E691F25B4C90012FB79 /* HtExtUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2E5B1F25B4C90012FB79 /* HtExtUIView.swift */; };
+		73AB2E6F1F25B5440012FB79 /* libLGAlertView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AB2E6E1F25B5440012FB79 /* libLGAlertView.a */; };
+		73AB2E711F26DDF90012FB79 /* Experi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2E701F26DDF90012FB79 /* Experi.swift */; };
 		73B19F271F1F04A1004ADEB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B19F261F1F04A1004ADEB5 /* main.m */; };
 		73B19F2A1F1F04A1004ADEB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B19F291F1F04A1004ADEB5 /* AppDelegate.m */; };
 		73B19F2D1F1F04A1004ADEB5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B19F2C1F1F04A1004ADEB5 /* FirstViewController.m */; };
@@ -46,6 +55,15 @@
 		46E94C2C15AFC7DA582B0748 /* Pods-ObjSwiftBedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjSwiftBedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjSwiftBedTests/Pods-ObjSwiftBedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		64330056BE1CDD50D6372448 /* libPods-ObjSwiftBed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjSwiftBed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B431798634A2C0D810C3544 /* libPods-ObjSwiftBedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjSwiftBedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73AB2E531F25B4C90012FB79 /* CGPoint+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Math.swift"; sourceTree = "<group>"; };
+		73AB2E551F25B4C90012FB79 /* HtDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtDouble.swift; sourceTree = "<group>"; };
+		73AB2E561F25B4C90012FB79 /* HtExtArrayGetPrevNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtExtArrayGetPrevNext.swift; sourceTree = "<group>"; };
+		73AB2E571F25B4C90012FB79 /* HtExtNSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtExtNSObject.swift; sourceTree = "<group>"; };
+		73AB2E591F25B4C90012FB79 /* HtExtString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtExtString.swift; sourceTree = "<group>"; };
+		73AB2E5A1F25B4C90012FB79 /* HtExtUiColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtExtUiColor.swift; sourceTree = "<group>"; };
+		73AB2E5B1F25B4C90012FB79 /* HtExtUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtExtUIView.swift; sourceTree = "<group>"; };
+		73AB2E6E1F25B5440012FB79 /* libLGAlertView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLGAlertView.a; path = "../../../Library/Developer/Xcode/DerivedData/ObjSwiftBed-dqmjupizbyovvhepjzlpuliammzo/Build/Products/Debug-iphonesimulator/LGAlertView/libLGAlertView.a"; sourceTree = "<group>"; };
+		73AB2E701F26DDF90012FB79 /* Experi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Experi.swift; sourceTree = "<group>"; };
 		73B19F221F1F04A1004ADEB5 /* ObjSwiftBed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjSwiftBed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B19F261F1F04A1004ADEB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		73B19F281F1F04A1004ADEB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0751D4AF0ADA0DA9EAD63FD4 /* libPods-ObjSwiftBed.a in Frameworks */,
+				73AB2E6F1F25B5440012FB79 /* libLGAlertView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +134,7 @@
 		640D8363DCE1E5F168C02834 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73AB2E6E1F25B5440012FB79 /* libLGAlertView.a */,
 				64330056BE1CDD50D6372448 /* libPods-ObjSwiftBed.a */,
 				6B431798634A2C0D810C3544 /* libPods-ObjSwiftBedTests.a */,
 				B725C6D242F1F149646D97B3 /* libPods-ObjSwiftBedUITests.a */,
@@ -122,9 +142,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		73AB2E4F1F25B4C90012FB79 /* UI_Extension */ = {
+			isa = PBXGroup;
+			children = (
+				73AB2E521F25B4C90012FB79 /* Extensions */,
+			);
+			path = UI_Extension;
+			sourceTree = "<group>";
+		};
+		73AB2E521F25B4C90012FB79 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73AB2E531F25B4C90012FB79 /* CGPoint+Math.swift */,
+				73AB2E551F25B4C90012FB79 /* HtDouble.swift */,
+				73AB2E561F25B4C90012FB79 /* HtExtArrayGetPrevNext.swift */,
+				73AB2E571F25B4C90012FB79 /* HtExtNSObject.swift */,
+				73AB2E591F25B4C90012FB79 /* HtExtString.swift */,
+				73AB2E5A1F25B4C90012FB79 /* HtExtUiColor.swift */,
+				73AB2E5B1F25B4C90012FB79 /* HtExtUIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		73B19F191F1F04A1004ADEB5 = {
 			isa = PBXGroup;
 			children = (
+				73AB2E4F1F25B4C90012FB79 /* UI_Extension */,
 				73B19F241F1F04A1004ADEB5 /* ObjSwiftBed */,
 				73B19F411F1F04A1004ADEB5 /* ObjSwiftBedTests */,
 				73B19F4C1F1F04A1004ADEB5 /* ObjSwiftBedUITests */,
@@ -160,6 +203,7 @@
 				73B19F251F1F04A1004ADEB5 /* Supporting Files */,
 				73B19FD91F1F0726004ADEB5 /* Bridge.swift */,
 				73B19FD81F1F0726004ADEB5 /* ObjSwiftBed-Bridging-Header.h */,
+				73AB2E701F26DDF90012FB79 /* Experi.swift */,
 			);
 			path = ObjSwiftBed;
 			sourceTree = "<group>";
@@ -473,11 +517,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73AB2E691F25B4C90012FB79 /* HtExtUIView.swift in Sources */,
+				73AB2E611F25B4C90012FB79 /* CGPoint+Math.swift in Sources */,
+				73AB2E641F25B4C90012FB79 /* HtExtArrayGetPrevNext.swift in Sources */,
 				73B19FDA1F1F0726004ADEB5 /* Bridge.swift in Sources */,
+				73AB2E711F26DDF90012FB79 /* Experi.swift in Sources */,
 				73B19F301F1F04A1004ADEB5 /* SecondViewController.m in Sources */,
 				73B19F2A1F1F04A1004ADEB5 /* AppDelegate.m in Sources */,
 				73B19F2D1F1F04A1004ADEB5 /* FirstViewController.m in Sources */,
 				73B19F271F1F04A1004ADEB5 /* main.m in Sources */,
+				73AB2E671F25B4C90012FB79 /* HtExtString.swift in Sources */,
+				73AB2E631F25B4C90012FB79 /* HtDouble.swift in Sources */,
+				73AB2E651F25B4C90012FB79 /* HtExtNSObject.swift in Sources */,
+				73AB2E681F25B4C90012FB79 /* HtExtUiColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

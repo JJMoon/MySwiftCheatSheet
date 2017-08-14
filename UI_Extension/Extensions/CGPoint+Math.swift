@@ -21,6 +21,6 @@ public extension CGPoint {
     }
 
     func distanceFrom(po: CGPoint) -> CGFloat {
-        return vectorTo(po).length()
+        return vectorTo(tar: po).length()
     }
 }

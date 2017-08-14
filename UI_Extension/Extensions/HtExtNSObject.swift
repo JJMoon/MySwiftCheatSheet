@@ -11,9 +11,9 @@ import UIKit
 
 public extension NSObject {
 
-    func colorGreenRedBy(pbool: Bool) -> UIColor {
-        if (pbool) { return colorOKGreen }
-        return colorNtGdRed
-    }
+//    func colorGreenRedBy(pbool: Bool) -> UIColor {
+//        if (pbool) { return colorOKGreen }
+//        return colorNtGdRed
+//    }
 
 }

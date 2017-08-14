@@ -9,7 +9,10 @@
 #import "FirstViewController.h"
 #import <LGAlertView.h>
 
+#import "ObjSwiftBed-Swift.h"
+
 @interface FirstViewController ()
+
 
 @end
 
@@ -43,6 +46,12 @@
                                            cancelButtonTitle:@"OK"
                                       destructiveButtonTitle:NULL];
     [alrtVw show];
+}
+
+- (IBAction)actTestA:(UIButton *)sender {
+    //NSArray *arr = [[NSArray alloc] initWithObjects:@"1",@"0",@"0",nil];
+    Experi * exp = [[Experi alloc] init];
+    [exp arrayTest];
 }
 
 

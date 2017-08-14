@@ -37,9 +37,9 @@ extension PrtclEnlargeView  where Self: UIViewController {
 
         if baseOrigin == nil {
             print("  Enlarge ")
-            self.targetView!.contentMode = UIViewContentMode.Redraw
+            self.targetView!.contentMode = UIViewContentMode.redraw
             baseOrigin = targetView!.center
-            UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 10, initialSpringVelocity: 3,
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 10, initialSpringVelocity: 3,
                                        options: [   ],
                                        animations: {
                                         self.targetView!.center = self.tarPoint!
