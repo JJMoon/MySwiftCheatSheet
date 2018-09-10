@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0751D4AF0ADA0DA9EAD63FD4 /* libPods-ObjSwiftBed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64330056BE1CDD50D6372448 /* libPods-ObjSwiftBed.a */; };
+		6B99AE55214645A900A9905D /* MdlArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B99AE54214645A900A9905D /* MdlArray.m */; };
 		73720074DCDC9D200D1A13F8 /* libPods-ObjSwiftBedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B431798634A2C0D810C3544 /* libPods-ObjSwiftBedTests.a */; };
 		73AB2E611F25B4C90012FB79 /* CGPoint+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2E531F25B4C90012FB79 /* CGPoint+Math.swift */; };
 		73AB2E631F25B4C90012FB79 /* HtDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB2E551F25B4C90012FB79 /* HtDouble.swift */; };
@@ -55,6 +56,8 @@
 		46E94C2C15AFC7DA582B0748 /* Pods-ObjSwiftBedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjSwiftBedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjSwiftBedTests/Pods-ObjSwiftBedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		64330056BE1CDD50D6372448 /* libPods-ObjSwiftBed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjSwiftBed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B431798634A2C0D810C3544 /* libPods-ObjSwiftBedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjSwiftBedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B99AE532146458F00A9905D /* MdlArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MdlArray.h; sourceTree = "<group>"; };
+		6B99AE54214645A900A9905D /* MdlArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MdlArray.m; sourceTree = "<group>"; };
 		73AB2E531F25B4C90012FB79 /* CGPoint+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Math.swift"; sourceTree = "<group>"; };
 		73AB2E551F25B4C90012FB79 /* HtDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtDouble.swift; sourceTree = "<group>"; };
 		73AB2E561F25B4C90012FB79 /* HtExtArrayGetPrevNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtExtArrayGetPrevNext.swift; sourceTree = "<group>"; };
@@ -142,6 +145,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6B99AE522146456200A9905D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B99AE532146458F00A9905D /* MdlArray.h */,
+				6B99AE54214645A900A9905D /* MdlArray.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		73AB2E4F1F25B4C90012FB79 /* UI_Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +179,7 @@
 		73B19F191F1F04A1004ADEB5 = {
 			isa = PBXGroup;
 			children = (
+				6B99AE522146456200A9905D /* Model */,
 				73AB2E4F1F25B4C90012FB79 /* UI_Extension */,
 				73B19F241F1F04A1004ADEB5 /* ObjSwiftBed */,
 				73B19F411F1F04A1004ADEB5 /* ObjSwiftBedTests */,
@@ -528,6 +541,7 @@
 				73B19F271F1F04A1004ADEB5 /* main.m in Sources */,
 				73AB2E671F25B4C90012FB79 /* HtExtString.swift in Sources */,
 				73AB2E631F25B4C90012FB79 /* HtDouble.swift in Sources */,
+				6B99AE55214645A900A9905D /* MdlArray.m in Sources */,
 				73AB2E651F25B4C90012FB79 /* HtExtNSObject.swift in Sources */,
 				73AB2E681F25B4C90012FB79 /* HtExtUiColor.swift in Sources */,
 			);

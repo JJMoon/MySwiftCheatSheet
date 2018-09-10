@@ -8,12 +8,13 @@
 
 #import "FirstViewController.h"
 #import <LGAlertView.h>
+#import "MdlArray.h"
 
 #import "ObjSwiftBed-Swift.h"
 
-@interface FirstViewController ()
-
-
+@interface FirstViewController () {
+ MdlArray *arrTestObj;
+}
 @end
 
 
@@ -32,6 +33,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  
+  arrTestObj = [[MdlArray alloc] init];
+  
     // Do any additional setup after loading the view, typically from a nib.
 }
 
