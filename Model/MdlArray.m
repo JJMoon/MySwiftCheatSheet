@@ -13,10 +13,28 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 # pragma mark - Model Array Implementation   Private methods
 
+@interface SomeObj : NSObject {
+//  NSString *name;
+//  NSString *other;
+}
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *other;
+@end
+
+@implementation SomeObj
+-(id)init {
+  self = [super init];
+  return self;
+}
+@end
+
+
 @interface MdlArray () {
   @private  ;
   NSMutableArray *arrMutable;
 }
+
+
 
 @end
 
@@ -24,7 +42,6 @@
 @implementation MdlArray
 //////////////////////////////////////////////////////////////////////////////////////////
 
-// @synthesize mgoBG, mgoDeco;
 
 //////////////////////////////////////////////////////////////////////         [ HtShape ]
 #pragma mark - 생성자, 소멸자.
@@ -41,20 +58,54 @@
 
 -(void)testCode {
   arrMutable = [[NSMutableArray alloc] init];
-  [arrMutable addObject:@"item one"];
-  [arrMutable addObject:@"item two"];
   
+  SomeObj* aObj = [[SomeObj alloc] init];
+  aObj.name = @"a";
+  aObj.other = @"a init";
+  [arrMutable addObject:aObj];
+  aObj = [[SomeObj alloc] init];
+  aObj.name = @"b";
+  aObj.other = @"b init";
+  [arrMutable addObject:aObj];
+  aObj = [[SomeObj alloc] init];
+  aObj.name = @"c";
+  aObj.other = @"c init";
+  [arrMutable addObject:aObj];
   NSLog(@"  the array : %@", arrMutable);
   
+  aObj = [[SomeObj alloc] init];
+  aObj.name = @"f";
+  aObj.other = @"f new one";
+  [self filterAdd:aObj];
+  
+  aObj = [[SomeObj alloc] init];
+  aObj.name = @"b";
+  aObj.other = @"b new one  edited";
+  [self filterAdd:aObj];
 }
 
-//
-//-(void)initialHtShape // *** PRIVATE ***
-//{
-//  mgoBG = nil; // 생성은 drawHeart, .. 에서.
-//  mgoDeco = nil;
-//  mgoWidth = mgoHeight = [self getAround:50 anySign:NO];
-//  mblRandom = NO; // 기본은 랜덤 없이. ...
-//}
+# pragma mark - Filtering for preventing duplication. Remove duplication and fill with new one
+-(void)filterAdd:(SomeObj*)aObj {
+  NSLog(@"\n  Add new object : %@", aObj.name);
+  int delTar = -1;
+  for (int k = 0; k < arrMutable.count; k++) {
+    SomeObj *cur = arrMutable[k];
+    if (cur.name == aObj.name) {
+      delTar = k;
+    }
+  }
+  if (delTar > 0) {
+    [arrMutable removeObjectAtIndex:delTar];
+  }
+  [arrMutable addObject:aObj];
+  [self showTheArray];
+}
+
+-(void)showTheArray {
+  for (int k=0; k < arrMutable.count; k++) {
+    SomeObj *cur = (SomeObj*)arrMutable[k];
+    NSLog(@"  cur :: %@  %@", cur.name, cur.other);
+  }
+}
 
 @end

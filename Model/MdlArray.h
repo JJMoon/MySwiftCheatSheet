@@ -17,19 +17,18 @@
 #ifndef MdlArray_h
 #define MdlArray_h
 
+
 @interface MdlArray : NSObject
 {
   // int mitKind; // 0:Heart 1:Diamond 2:Spade 3:Clover
   
   NSMutableArray *arrTotal;
-  
-  
-  
+  // UIViewController* vw;
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 # pragma mark - property  #### Don't forget to ADD synthesize ####
 
-// @property (nonatomic, retain) ANBeziers *mgoBG, *mgoDeco;
+// @property (nonatomic, retain) UIViewController* vw;
 
 
 // initialize & dealloc related.

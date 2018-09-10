@@ -13,7 +13,7 @@
 #import "ObjSwiftBed-Swift.h"
 
 @interface FirstViewController () {
- MdlArray *arrTestObj;
+ MdlArray *objArray;
 }
 @end
 
@@ -34,8 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
-  arrTestObj = [[MdlArray alloc] init];
-  
+  objArray = [[MdlArray alloc] init];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
